@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vocate Game Dev</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,100' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+	<script src="/js/progressbar.min.js"></script>
+</head>
+<body>
+
+	<div id="game">
+		<div class="container" id="false-nav">
+
+			<div class="col-xs-8 col-xs-offset-2" id="logo">
+				<img src="images/logo.png" alt="vocate logo">
+			</div>
+
+			<div class="col-xs-2">
+				<a href="#"><i class="fa fa-bars pull-right fa-2x"></i></a>
+			</div>
+
+		</div> <!-- end false nav -->
+
+		<div class="container" id="start">
+
+			<div class="row" id="start-row">
+			
+				<div class="col-xs-6 col-xs-offset-3" >
+					<div class="col-xs-5">
+						<i class="fa fa-briefcase fa-5x"></i>
+					</div>
+
+					<div class="col-xs-2">
+						<p>or</p>
+					</div> 
+
+					<div class="col-xs-5">
+						<i class="fa fa-headphones fa-5x"></i>
+					</div>
+				</div>
+			
+			</div> <!-- end choice row -->
+
+			<!-- ask Tim about the first-of-type selector -->
+			<div class="row text" id="text1">
+				<div class="col-xs-10 col-xs-offset-1">
+					<p>We want to match you with a company that is perfect for your talents.</p>
+				</div>
+			</div>
+
+			<div class="row text">
+				<div class="col-xs-10 col-xs-offset-1">
+					<p>The more you tell us about your interests the better.</p>
+				</div>
+			</div>
+
+			<div class="row"><button class="btn btn-orange" id="start-btn">Get Started!</button></div>
+
+		</div> <!-- End start container -->
+
+
+		<div id="question" class="container">
+
+			<div id="nextChoice1" class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3"></div>
+		
+			<div id="pbarCont" style="display: none;">
+				<div class="row">
+					<div id="pbar" class="col-xs-10 col-xs-offset-1"></div>				
+<!-- 					********* Timer Function *********
+					<div id="timer" class="col-xs-2 col-xs-offset-1">
+						<p id="numOfSeconds">
+							// int: Number of Seconds left
+						</p>
+					</div> -->
+				</div>
+			</div> <!-- end class row for progress bar-->
+
+			<div id="choice1" class="outTop col-xs-10 col-xs-offset-1 col-md-5 col-md-offset-1"> 
+				<!-- <img src="images/Pixar-Logo.jpg" alt=""> --> 
+			</div>
+
+			<div id="choice2" class="outBottom col-xs-10 col-xs-offset-1 col-md-5">
+				<!-- <img src="images/google-logo.jpg" alt=""> --> 
+			</div>
+
+			<div id="nextChoice2" class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3"></div>
+		</div> <!-- end question -->
+
+	</div>
+
+	<script src="js/data.js"></script>
+	<script src="js/objects.js"></script>
+	<script src="js/functions.js"></script>
+	<!-- <script src="js/clean.js"></script> -->
+</body>
+</html>
